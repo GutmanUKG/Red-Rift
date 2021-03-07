@@ -1,0 +1,157 @@
+.header{
+    .container{
+        padding-top: 30px;
+    }
+    &__wraper{
+        background: url(../img/main_bg.jpg) center (center/cover) no-repeat;
+        height: 1020px;
+        padding: 35px 30px 100px 30px;
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        a{
+            display: block;
+            max-width: 181.25px;
+            height: 40px;
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &__content{
+
+    }
+    &__title{
+        text-align: center;
+        font-family: Poppins;
+        font-weight: bold;
+        font-size: 80px;
+        line-height: 90px;
+        text-align: center;
+        color: #dc322a;
+        margin-top: 175px;
+    }
+    &__subtitle{
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 90px;
+        text-align: center;
+        color: #fff;
+        margin-top: 42px;
+        &::after{
+            content: '';
+            display: block;
+            background:url(../icons/line.svg) center (center/cover) no-repeat;
+            max-width: 141px;
+            height: 42px;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 19px;
+        }
+
+    }
+    &__descr{
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 24px;
+        text-align: center;
+        color: #fff;
+        margin-top: 50px;
+        span{
+            position: relative;
+            .left{
+                display: inline-block;
+                margin: 0 0.5rem;
+                width: 50px;
+                height: 40px;
+                background: url(../icons/1.svg)center (center/cover) no-repeat;
+                animation: swing; /* referring directly to the animation's @keyframe declaration */
+                animation-duration: 2s; /* don't forget to set a duration! */
+                animation-iteration-count:infinite;
+                
+            }
+            .right{
+                display: inline-block;
+                margin: 0 0.5rem;
+                width: 50px;
+                height: 40px;
+                background: url(../icons/2.svg)center (center/cover) no-repeat;
+                animation: swing; /* referring directly to the animation's @keyframe declaration */
+                animation-duration: 2s; /* don't forget to set a duration! */
+                animation-iteration-count:infinite
+            }
+        }
+    }
+    &__items{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        &__item{
+            margin-right: 30px;
+            padding: 18px 30px;
+            border-radius: 15px;
+            background: transparent;
+            backdrop-filter: blur(5px);
+        --webkit-backdrop-filter: blur(5px);
+            background-color: rgba(255, 255, 255, 0.05);
+            cursor: pointer;
+            &:last-child{
+                margin-right: 0;
+            }
+                
+            
+        }
+    }
+    &__footer{
+        display: flex;
+        justify-content: flex-end;
+        align-items:center;
+        padding: 0 30px;
+        &__email{
+           
+            flex-direction: column;
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 16px;
+            text-align: right;
+            color:#DC322A;
+            span{
+                color: #afafaf;
+            }
+           a{
+               display: block;
+               font-family: Poppins;
+                font-weight: 500;
+                font-size: 18px;
+                text-align: left;
+                color: #fff;
+           }
+
+        }
+    }
+    &__trigger{
+        display: flex;
+        width: 50px;
+        height: 70px;
+        border-radius: 25px;
+        background: #dc322a;
+        box-shadow: 0px 15px 55px rgba(220, 50, 42, 0);
+        align-items:center;
+        justify-content: center;
+        cursor: pointer;
+        a{
+           
+            width: 14px;
+            height: 20px;
+            background: #fff;
+            display: block;
+            border-radius: 10px;
+        }
+    }
+
+}
+.shapka--fixed{
+    position: fixed;
+}
