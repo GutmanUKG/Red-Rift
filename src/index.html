@@ -13,7 +13,7 @@
 </head>
 <body>
    
-    <section>   
+    <section id="main">   
         <div class="container">
             <header class="header">
                 <div class="container">
@@ -26,6 +26,9 @@
                            <button class="button">
                                 we are hiring 
                            </button>
+                           <div class="burger_menu">
+
+                           </div>
                        </div>
                        <div class="header__content">
                            <h1 class="header__title">
@@ -66,26 +69,49 @@
                 </div>
             </header>     
         </div>  
-        <div class="shapka">
-            <div class="info-header" id="info">
+        <div class="menu_wrap">
+             <div class="info-header shapka__inner" id="info">
                 <a href="#" class="logo">
                     <img src="./icons/logo_black.svg" alt="logo_black" class="logo logo_black">
                     <img src="./icons/logo_white.png" alt="logo_white" class="logo logo_white">
                 </a>
-                <div class="tabs">
-                    <div class="info-header-tab active">service</div>
-                    <div class="info-header-tab">about </div>
-                    <div class="info-header-tab cases_link">cases</div>
-                    <div class="info-header-tab jobs_link">jobs</div>
-                    <div class="info-header-tab">news</div>
-                    <div class="info-header-tab">contacts</div>
-                    
-                </div>
+                <ul class="tabs">
+                    <li>
+                       <a href="#offer"  class="info-header-tab">
+                        service
+                       </a> 
+                    </li>
+                    <li>
+                       <a href="#about" class="info-header-tab">
+                        about
+                       </a>  
+                    </li>
+                    <li>
+                       <a href="#cases" class="info-header-tab">
+                        cases
+                       </a>
+                     </li>
+                    <li>
+                       <a href="#jobs" class="info-header-tab">
+                        jobs
+                       </a> 
+                    </li>
+                    <li >
+                       <a href="#news" class="info-header-tab">
+                        news
+                       </a> 
+                    </li>
+                    <li >
+                       <a href="#contacts" class="info-header-tab"> 
+                        contacts
+                       </a> 
+                    </li>            
+                </ul>
                 
             </div>
         </div> 
     </section>
-    <section class="offer_section" id="offer">
+    <section class="offer_section" id="offer" name='offer'>
         <div class="container">
             <div class="info-tabcontent  offer  wow animate__animated animate__backInLeft ">
                 <div class="offer__wraper">
@@ -219,7 +245,7 @@
         </div>   
     </section>
 
-    <section class="section_team" id="about">
+    <section class="section_team" id="about" name='about'>
        <div class="container">
         <div class="info-tabcontent  team  animate__animated animate__backInLeft ">
             <div class="team__wraper">
@@ -449,10 +475,76 @@
             </div>
              <img src="./img/team_bg.png" alt="" class="bg_team bg_section bg_section_team">
           </div>
+          <div class="mobile_slider_team">
+              <div class="wraper_item_slide_team">
+                    <div class="item">
+                        <div class="head_item">
+                            <img src="./icons/valdimir.png" alt="Vladimir">
+                        </div>
+                        <div class="title_item">
+                            Vladimir Proseanic
+                        </div>
+                        <div class="descr_item">
+                            CBO, CEO Progress, Inc.
+                        </div>
+                        <div class="socila_item">
+                            <div class="social">
+                                <a href="#">
+                                    <img src="./icons/linkedin.png" alt="linkedin">
+                                </a>
+                                <a href="#">
+                                    <img src="./icons/vk.png" alt="vk">
+                                </a>
+                                <a href="#">
+                                    <img src="./icons/facebook-f.png" alt="facebook-f">
+                                </a>
+                        </div>
+                    </div>
+                    </div>
+                    <!--  -->
+
+                    <div class="item">
+                        <div class="head_item">
+                            <img src="./icons/valdimir.png" alt="Vladimir">
+                        </div>
+                        <div class="title_item">
+                            Vladimir Proseanic
+                        </div>
+                        <div class="descr_item">
+                            CBO, CEO Progress, Inc.
+                        </div>
+                        <div class="socila_item">
+                            <div class="social">
+                                <a href="#">
+                                    <img src="./icons/linkedin.png" alt="linkedin">
+                                </a>
+                                <a href="#">
+                                    <img src="./icons/vk.png" alt="vk">
+                                </a>
+                                <a href="#">
+                                    <img src="./icons/facebook-f.png" alt="facebook-f">
+                                </a>
+                        </div>
+                    </div>
+                    </div>
+              
+          </div>
+          <div class="wraper_arrow_team">
+            
+            <span>
+                <span class="current_slide">
+
+                </span>
+                <span class="slide_counts">
+
+                </span>
+            </span>
+           
+          </div>
        </div>
     </section>
 
-    <section class="jobs" id="cases">
+    <section class="jobs" id="cases" name="cases">
         <div class="container">
             <div class="slide-inner">
                 <div class="info-tabcontent jobs">
@@ -466,13 +558,13 @@
                             </div>
                             <div class="carousel__inner">
                                 <div class="slid">
-                                    <img src="./icons/1.png" alt="">
+                                    <img src="./icons/1.png" alt="" class="img_mini">
                                 </div>
                                 <div class="slid">
-                                    <img src="./icons/2.png" alt="">
+                                    <img src="./icons/2.png" alt="" class="img_mini">>
                                 </div>
                                 <div class="slid">
-                                    <img src="./icons/1.png" alt="">
+                                    <img src="./icons/1.png" alt="" class="img_mini">>
                                 </div>                              
                             </div>
                         </div>
@@ -574,11 +666,117 @@
                     </div>
                 </div> 
             </div>
+            <div class="mobile_slider">
+                <div class="title_mobile">
+                    What We 
+                        Do?
+                </div>
+                <div class="wraper_mobile_slid">
+                    <div class="slider_item_mobile">
+                        <div class="header_slid">
+                                <img src="./icons/chiken_icon.png" alt="chiken">
+                        
+                            <div class="header_title">
+                                <div class="title">
+                                    Hay Day
+                                </div>
+                                <div class="descr">
+                                    Farm with Friends
+                                    and Family
+                                </div>
+                            </div>
+                            <div class="points">
+                                4+
+                            </div>
+                        </div>
+                        <div class="body_slid">
+                            <img src="./icons/1.png" alt="1">
+                            <img src="./icons/2.png" alt="">
+                        </div>
+                        <div class="descr_slid">
+                            <p>
+                                Best. Farm. Ever. Welcome to Hay Day, the most popular farming game on mobiles and tablets, number one in 122 countries.
+                            </p>
+                            <p>
+                                Learn the lay of the land, tend to your crops, and trade goods with neighbors and friends. It’s a real special place where the crops never die even though it never rains.
+                            </p>
+                        </div>
+                        <div class="footer_slid">
+                            <div class="item_img">
+                                <img src="./icons/google.png" alt="google">
+                            </div>
+                            <div class="item_img">
+                                <img src="./icons/app_store.png" alt="app_store">
+                            </div>
+                            
+                        </div>
+                       
+                    </div>
+    
+                    <!--  -->
+                    <div class="slider_item_mobile">
+                        <div class="header_slid">
+                                <img src="./icons/chiken_icon.png" alt="chiken">
+                        
+                            <div class="header_title">
+                                <div class="title">
+                                    Hay Day
+                                </div>
+                                <div class="descr">
+                                    Farm with Friends
+                                    and Family
+                                </div>
+                            </div>
+                            <div class="points">
+                                4+
+                            </div>
+                        </div>
+                        <div class="body_slid">
+                            <img src="./icons/1.png" alt="1">
+                            <img src="./icons/2.png" alt="">
+                        </div>
+                        <div class="descr_slid">
+                            <p>
+                                Best. Farm. Ever. Welcome to Hay Day, the most popular farming game on mobiles and tablets, number one in 122 countries.
+                            </p>
+                            <p>
+                                Learn the lay of the land, tend to your crops, and trade goods with neighbors and friends. It’s a real special place where the crops never die even though it never rains.
+                            </p>
+                        </div>
+                        <div class="footer_slid">
+                            <div class="item_img">
+                                <img src="./icons/google.png" alt="google">
+                            </div>
+                            <div class="item_img">
+                                <img src="./icons/app_store.png" alt="app_store">
+                            </div>
+                            
+                        </div>
+                       
+                    </div>
+    
+                    <!--  -->
+                </div>
+               
+                <div class="arrow_slid">
+                  
+                   <span>
+                       <span class="current_slide_mobile">
+
+                       </span>
+                       <span class="slide_counts_mobile">
+
+                       </span>
+                   </span>
+                      
+                   
+                </div>
+            </div>
             <img src="./img/bg_jobs.png" alt="bg_jobs" class="bg_jobs bg_section">
         </div>
     </section>
 
-    <section class="vacancies" id="jobs">
+    <section class="vacancies" id="jobs" name="jobs">
         <div class="container">
             <div class="info-tabcontent vacancies">
                 <div class="container">
@@ -1032,7 +1230,7 @@
                                     <div>
                                         <input type="radio" id="all" 
                                         data-name="all" name="all" class="custom-checkbox">
-                                        <label for="all">All</label>    
+                                        <label for="all" checked >All</label>    
                                     </div>
                                     <div>
                                         <input type="radio" id="developer" 
@@ -1078,7 +1276,7 @@
         </div>
     </section>
 
-    <section class="news" id="news">
+    <section class="news" id="news" name="news">
        <div class="container">
         <div class="info-tabcontent news">
             <div class="container">
@@ -1138,18 +1336,83 @@
        </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-    <footer class="footer" id="contacts">
+    <div class="burger_menu_wraper ">
+        <div class="burger_menu_header">
+            <div class="burger_logo">
+                <a href="#main" class="link_top">
+                    <img src="./icons/logo_white.png" alt="logo_white">
+                </a>
+            </div>
+            <div class="close">
+                <img src="./icons/close_menu.png" alt="close">
+            </div>
+        </div>
+        <div class="burger_menu_body">
+            <ul class="burger_menu_wraper_link">
+                <li>
+                    <a href="#offer" class="burger_link">
+                        service
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" class="burger_link">
+                        about
+                    </a>
+                </li>
+                <li>
+                    <a href="#cases" class="burger_link">
+                        cases
+                    </a>
+                </li>
+                <li>
+                    <a href="#jobs" class="burger_link">
+                        jobs
+                    </a>
+                </li>
+                <li>
+                    <a href="#news" class="burger_link">
+                        news
+                    </a>
+                </li>
+                <li>
+                    <a href="#contacts" class="burger_link">
+                        contacts
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button class="button button_burger">
+            we are hiring
+        </button>
+        <div class="burger_menu_footer">
+            <div class="top">
+                contact us <span>at any time:</span> 
+                <a href="mailto:info@gamesredrift.com"> info@gamesredrift.com</a>
+            </div>
+            <div class="footer__line"></div>
+            <div class="burger_socials">
+                <a href="#">
+                    <img src="./icons/twitter.png" alt="twitter">
+                </a>
+                <a href="#">
+                    <img src="./icons/facebook.png" alt="facebook">
+                </a>
+                <a href="#">
+                    <img src="./icons/vk_white.png" alt="vkontakte">
+                </a>
+                <a href="#">
+                    <img src="./icons/linkedin_white.png" alt="linkedin_white">
+                </a>
+                <a href="#">
+                    <img src="./icons/instagram.png" alt="instagram">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="close_block">
+        
+    </div>
+    <footer class="footer" id="contacts" name='contacts'>
         <div class="container">
             <div class="footer__wraper">
                 <div class="footer__head">
