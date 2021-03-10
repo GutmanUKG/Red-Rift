@@ -1,11 +1,11 @@
 .info-header{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 150px;
+    align-items: center;
     position: relative;
     z-index: 1;
-    padding: 0 35px;
-    margin-top: 120px;
+    padding: 0 30px;
+    margin-top: 150px;
     .tabs{
         list-style: none;
         a{
@@ -13,7 +13,6 @@
             
         }
         display: flex;
-        padding-right: 35px;
         .info-header-tab{
             a{
 
@@ -59,4 +58,9 @@
    .info-header-tab{
        color: #ffff !important;
    }
+}
+
+
+.menu_wrap{
+    padding-bottom: 153px;
 }
